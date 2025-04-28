@@ -41,7 +41,7 @@ First, install Docker on your machine:
 sudo docker run -it --rm -v "$(pwd):/tmp" -w /tmp tensorflow/tensorflow:2.19.0 python download_and_build_wake_vision_dataset.py your-api-token-goes-here
 ```
 
-💡 **Note**: Make sure to have at least 400 GB of free disk space.
+💡 **Note**: Make sure to have at least 600 GB of free disk space.
 
 ---
 
@@ -55,8 +55,6 @@ sudo docker run -it --rm -v $PWD:/tmp -w /tmp tensorflow/tensorflow:2.19.0 pytho
 
 - This trains the [ColabNAS model](https://github.com/harvard-edge/Wake_Vision/blob/main/experiments/comprehensive_model_architecture_experiments/wake_vision_quality/k_8_c_5.py), a state-of-the-art person detection model, on the Wake Vision dataset.
 - Modify the `model_centric.py` script to propose your own architecture.
-
-💡 **Note**: The first execution may take several hours as it downloads the full dataset (~365 GB).
 
 ---
 
