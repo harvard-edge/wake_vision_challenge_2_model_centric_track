@@ -137,6 +137,11 @@ for zipped_file in Path('.').glob('*.tar.gz') :
     images = set(Path('.').glob('*.jpg'))
     for image in images : 
         image.unlink()
-    
-    #delete zip file
-    #zipped_file.unlink()
+
+for zipped_file in Path('.').glob('*.tar.gz') :
+    zipped_file.unlink()
+
+for csv_file in Path('.').glob('*.csv') :
+    csv_file.unlink()
+
+print(f"Dataset saved in folder: {path_to_dataset}")
